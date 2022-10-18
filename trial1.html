@@ -53,14 +53,6 @@ button
 }
 </style>
 </head>
-<!-- <script>
-  function validateForm() {
-  // Retrieving the values of form elements
-  var name = document.myform.name.value;
-  var email = document.myform.email.value;
-  var phone = document.myform.phone.value;
-  }
-</script> -->
 
 <body>
 
@@ -80,6 +72,7 @@ button
 
     <label for="name">Last Name</label>
     <input type="text" id="name1" name="lastname" placeholder="Your last name.." required>
+    <!-- checking if user has entered any input, if not error message displays to enter the input -->
 
     <label for="password">Password</label>
     <input type="password" id="password" name="password" placeholder="Your password..">
@@ -95,7 +88,7 @@ button
      
 
 
-    <label for="country"> Country </label>
+    <label for="country">Country</label>
     <select id="country" name="country">
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
