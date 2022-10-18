@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <meta charset="utf-8">
+        <script defer src="script.js"></script>
+      </head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(163, 16, 16);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f7e9e9;
+  padding: 20px;
+}
+.error
+{
+    color:red;
+    size: 80%
+}
+.hidden
+{
+    display:none;
+}
+</style>
+<body>
+
+
+<h3>Using CSS to style an HTML Form</h3>
+
+
+<div>
+   
+  <form id="myform" method="GET" action="/">
+    <fieldset>
+        <legend> DETAILS</legend>
+    <label for="name">name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="name" placeholder="Your last name.." required>
+   
+
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Your password..">
+    <div id="error"></div>
+    <p>Are u Working?</p>
+  
+
+    <input type="radio" id="yes" name="work" value="Yes">
+    <label for="horror">Yes</label><br>
+    <input type="radio" id="No" name="work" value="No">
+    <label for="Drama">No</label><br>
+   
+
+
+    <label for="country">Nationality</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">India</option>
+    </div>
+
+    </select>
+
+    <!-- <input type="text" id="phnmber" name="phonenumber" required> -->
+    <input type="submit" >
+</fieldset>
+<!-- <a href="javascript: submitform()">Submit</a> -->
+<!-- <button type="submit">Submit</button> -->
+<!-- <a href="javascript: submitform()">Submit</a> -->
+</form>
+</div>
+</body>
+<!-- <script type="text/javascript">
+  function submitform()
+  {
+      document.forms["myform"].submit();
+  }
+  </script> -->
+  <!-- <form id="myform" action="submit-form.php">
+  Search: <input type='text' name='query'>
+  <a href="javascript: submitform()">Submit</a>
+  </form> -->
+<!-- <script>
+    var form = document.getElementById('myform')
+    form.addEventListener('submit', function(event)
+    {
+        var password= document.getElementById('password').value
+        console.log(password)
+    })
+ 
+
+</script> -->
+</html>
